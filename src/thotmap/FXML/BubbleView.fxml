@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane blendMode="SRC_ATOP" cache="false" disable="false" mouseTransparent="false" prefHeight="150.0" prefWidth="176.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="thotmap.BubbleViewController">
+  <children>
+    <TextArea fx:id="textArea" editable="false" focusTraversable="true" layoutX="0.0" layoutY="30.0" onKeyReleased="#Typed" prefHeight="135.0" prefWidth="176.0" visible="false" wrapText="true" />
+    <TextField fx:id="textField" editable="false" focusTraversable="true" layoutX="0.0" layoutY="0.0" onKeyReleased="#Typed" prefHeight="29.9609375" prefWidth="176.0" visible="false" />
+    <Label fx:id="Title" cache="false" layoutX="3.0" layoutY="0.0" prefHeight="29.9609375" prefWidth="169.0" text="Label">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+    </Label>
+    <Label fx:id="Body" alignment="TOP_LEFT" layoutX="3.0" layoutY="29.0" prefHeight="121.0" prefWidth="169.0" text="Label" underline="false" wrapText="true" />
+    <Rectangle fx:id="cover" arcHeight="40.0" arcWidth="40.0" fill="#1e90ff00" height="150.0" layoutX="0.0" layoutY="0.0" onMouseClicked="#CoverClicked" opacity="0.55" pickOnBounds="true" stroke="BLACK" strokeDashOffset="0.0" strokeLineJoin="MITER" strokeType="INSIDE" strokeWidth="1.5" visible="true" width="176.0" />
+    <Circle fx:id="kids" fill="DODGERBLUE" layoutX="0.0" layoutY="75.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="1.6" visible="false" />
+    <Circle fx:id="parent" fill="#8fff00" layoutX="176.0" layoutY="75.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="1.6" visible="false" />
+  </children>
+</Pane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="thotmap.MainFrameController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <SplitPane dividerPositions="0.5" focusTraversable="true" orientation="VERTICAL" prefHeight="800.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane fx:id="top" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        <AnchorPane fx:id="bottom" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <TreeView fx:id="outline" editable="true" prefHeight="396.0" prefWidth="398.9999000000025" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="399.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <VBox layoutX="0.0" prefHeight="396.0" prefWidth="399.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <Label text="Title">
+                  <font>
+                    <Font name="System Bold" size="18.0" fx:id="x1" />
+                  </font>
+                  <VBox.margin>
+                    <Insets left="2.5" fx:id="x2" />
+                  </VBox.margin>
+                </Label>
+                <TextField fx:id="title" minHeight="22.0" prefWidth="200.0" VBox.vgrow="SOMETIMES">
+                  <VBox.margin>
+                    <Insets left="5.0" right="5.0" />
+                  </VBox.margin>
+                </TextField>
+                <Label font="$x1" text="Info" VBox.margin="$x2" />
+                <TextArea fx:id="body" prefHeight="326.0" prefWidth="399.0" wrapText="true" VBox.vgrow="SOMETIMES">
+                  <VBox.margin>
+                    <Insets bottom="10.0" left="5.0" right="5.0" />
+                  </VBox.margin>
+                </TextArea>
+              </children>
+            </VBox>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
