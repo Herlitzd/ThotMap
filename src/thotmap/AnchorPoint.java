@@ -19,8 +19,9 @@ public class AnchorPoint extends Circle{
         super(radius, c);
         this.setStroke(Color.BLACK);
         this.setStrokeWidth(1.6);
-        this.setLayoutX(x);
         this.setLayoutY(y);
+        this.setLayoutX(x);
+
         this.isParent = parent;
         isFilled = false;
     }
